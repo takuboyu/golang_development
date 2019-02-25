@@ -6,13 +6,5 @@ services:
     - ./:/go/src/golang_development/mygoapp
    ports:
     - "8080:8080"
-    - "8000:8000" #delve用のポート
-   #environment:
-   # GO111MODULE: "on"
-   privileged: true #開発時のみ
-   #security_opt:
-   # - apparmor:unconfined
-   #cap_add:
-   # - SYS_PTRACE
-   #ommand: dlv debug --headless --listen=:8000 --log
-   #entrypoint: dlv debug --headless --listen=:8000 --log
+   environment:
+      GO111MODULE: "on"
