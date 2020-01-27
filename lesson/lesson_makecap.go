@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	//intのスライスで、長さを3, キャパシティを5
-	//makeで初期化する時に長さを3, キャパシティを5の[0, 0, 0]を作成
+	//makeで初期化する時に長さを3, キャパシティを5の[0, 0, 0]makeを作成
 	n := make([]int, 3, 5)
 	fmt.Printf("len=%d cap=%d value=%v\n", len(n), cap(n), n)
 	n = append(n, 0, 0)
