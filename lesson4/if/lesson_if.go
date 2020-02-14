@@ -6,7 +6,7 @@ func by2(num int) string {
 	if num%2 == 0 {
 		return "ok"
 	} else {
-		return "ng"
+		return "no"
 	}
 }
 
@@ -41,10 +41,11 @@ func main() {
 	fmt.Println(result)
 
 	///一行で書くやり方もある
+	////なのでresult2はこの処理でしか使えない、後続では使えない
 	if result2 := by2(10); result2 == "ok" {
 		fmt.Println("great 2")
 	}
 	///この書き方の場合後続でresult2は使えない
 	///後続で使わないのであれば上記書き方もできる
-	fmt.Println(result2)
+	//fmt.Println(result2)
 }
